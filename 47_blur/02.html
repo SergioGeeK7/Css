@@ -1,0 +1,226 @@
+media="print"
+--media="screen and (min-width:481px) " minimo para entrar esto: no es seguro
+media="handheld, only screen and (max-width:480px)"
+
+
+minimo de hay para arriba
+maximo de hay para abajo
+<meta name="viewport" content="with=device-with, initial-scale=1">
+normalize.css
+clear:both
+margin 0 auto
+transform: scale(2) rotate(45deg)
+transform-origin:center bottom
+li:nth-child(even)
+
+ul
+{
+    margin:0;
+    padding:0;
+    margin:auto;
+    height:30px;
+}
+
+li
+{
+    list-style-type:none;
+    float:left;
+    display:block;
+    with:20%;
+    line-height:30px;
+}
+
+
+li a{
+
+text-decoration:none;
+with:100%;
+height:100%;
+}
+
+
+
+li a:hover {
+background:yellow;
+color:red
+}
+
+#pacman{
+    with:0px;
+    height:0px;
+    border:60px solid yellow;
+    border-right: 60px solid transparent;
+    border-radious:60px;
+}
+
+#estrella{
+
+    margin:50px 0;
+    position: relative;
+    display: block;
+    width:0px;
+    height:0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid green;
+    border-left: 100px solid transparent;
+}
+
+
+#estrella:before 
+{
+    border-bottom: 80px solid green;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width:0;
+    top: -45;
+    left: -65;
+    content: '';
+    transform: rotate(-35deg)
+    display:block;
+}
+
+#dialogo:before 
+{
+    content:"";
+    border-top:13px solid transparent;
+    border-bottom:13px solid transparent;
+    position:absolute;
+    right:100%;
+    top:26px;
+    width:0;
+    height:0;
+}
+
+
+#cuadro 
+{
+    background: url() no-repeat;
+    with:300px;
+    height:200px;
+    background-size:contain;
+    border:100px solid transparent;
+    border-image : url() 220 repeat;
+    border-radious:20px;
+    background-position: -100px -100px;
+}
+sandbox.juan-i.com/longshadows
+
+
+
+.etiqueta
+{
+    white-space:nowrap;
+    position: relative;
+    margin:0 5px 0 10px;
+    display:inline-block;
+    height:25px;
+    padding:0 25px 0 15px;
+    background : black;
+    border: 0 solid green;
+    color: blue;
+    line-height:23px;
+    border-radious: 0 5px; 5px 0px;
+}
+
+.etiqueta:before 
+{
+    content:"\25CF";
+    position:absolute;
+    left:15px;
+    width:1px;
+    height:0px;
+    color:white;
+    text-shadow:0 0 1px #333;
+    font-size: 11px;
+    line-height:0px;
+    text-indent:12px;
+    /* Triangulo */
+    
+    border-right: 14px solid E8EDF0;
+    border-top:   13px solid transparent;
+    border-bottom:13px solid transparent;
+}
+---------------
+.circulo 
+{
+    -webkit-clip-path : circle(80px at 100px 90px)
+    -webkit-clip-path : ellipse(85px 40px at 140px 90px);
+    -webkit-clip-path : polygon(50% 0%, 100% 100%, 0% 75%)
+}
+
+----------------------------------
+
+sprite
+
+ul.sprites
+ li>span.figura1
+
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style-type:none;
+    height:120px;
+    line-height:120px;
+    font-size:30px;
+}
+
+span{
+
+    float:left;
+    height:120px;
+    width:120px;
+    margin: 0 15px;
+}
+
+.sprites span
+{
+    background-image: url("imagenes/img_sprite.png")
+}
+
+
+.figura1{
+    background-position:-15 0px;
+}
+
+.figura2{
+    background-position:-171 -5px;
+}
+
+.figura3{
+    background-position:-332px -5px;
+}
+
+------------reflejo ----------
+
+-webkit-box-reflect : left 0px;
+-webkit-box-reflect : below 0px -webkit-gradient();
+
+
+-----------desenfoque --------
+
+
+
+.desenfoque:before {
+    content:"";
+    background-image: url("");
+    webkit-filter: blur(5px) /*borroso*/
+    width:40px;
+    height:40px;
+    position:fixed;
+}
+
+
+----------- SVG Animacion ----------------
+Svg-loaders
+
+svg path,svg rect{
+ fill:orange;
+}
+
+-----------auto-prefixer -------------------
