@@ -10,8 +10,7 @@ column-count: 4
 column-width: 120px
 column-gap: 3rem
 column-rule: 1px dashed #ccc;
-
-
 background-color:tomato
 background-blend-mode: multiply
 @supports not (background-blend-mode: multiply) {}
+http://www.w3schools.com/css/tryit.asp?filename=trycss_layout_cols
